@@ -1,0 +1,11 @@
+text,intent
+open chrome,open_chrome
+launch chrome,open_chrome
+start chrome,open_chrome
+open calculator,open_calculator
+launch calculator,open_calculator
+open notepad,open_notepad
+start notepad,open_notepad
+open linkedin,start linkedin
+open spotify,start spotify
+open map

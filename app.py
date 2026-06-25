@@ -43,9 +43,10 @@ st.markdown("### Voice Controlled Smart Assistant")
 
 
 engine = pyttsx3.init()
-genai.configure(api_key="YOUR_API_KEY")
+api_key = os.getenv("GENAI_API_KEY")
+genai.configure(api_key=api_key)
 
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 def speak(text):
     engine.say(text)
     engine.runAndWait()
